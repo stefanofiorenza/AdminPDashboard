@@ -8,24 +8,13 @@ import DataTablePage from './DataTablePage.jsx';
 import DataTablePageAddOn from './DataTablePageAddOn.jsx';
 import InvoicePage from './InvoicesPage.jsx';
 
-export default class MasterLayout extends React.Component{
+export default class SingleComponentLayout extends React.Component{
     
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
             <div className="container-fluid fixed">		
-                <TopMenu appAcronym="Admin+" appName="Demo AdminPlus" userName="stefano.fiorenza" />
-
-                <div id="wrapper">
-                    <SideMenu/>        
-                    <div id="content">
-                        {/* */}
-                        <InvoicePage />      
-                    </div>                    
-                </div>  
+               <InvoicePage />
             </div>
 
         );
