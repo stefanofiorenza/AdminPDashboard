@@ -10,6 +10,8 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 
 import paginationFactory from 'react-bootstrap-table2-paginator';
+import 'react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css';
+
 import {invoicesData} from '../data/InvoicesData.js';
 import './InvoicesPage.css';
 
@@ -83,9 +85,21 @@ export default class InvoicePage extends React.Component{
         return (        
             <div class="row-fluid">            
 
-                <div class="span12" > 
 
-                            <div class="widget-head">
+                <div class="span12" > 
+                  <BootstrapTable keyField='id' data={ invoicesData } columns={ columns } pagination={ paginationFactory(paginationOptions) } />
+                </div>               
+
+             </div>            
+        );
+    }
+
+
+}
+
+
+/*
+   <div class="widget-head">
                                 <div class="heading-buttons">
                                     <h3 class="glyphicons cart_in"><i></i> Table</h3>					
                                     <div class="clearfix"></div>
@@ -101,14 +115,9 @@ export default class InvoicePage extends React.Component{
                                         table goes here
                                         <br/>
                                         <br/>
-                                        <BootstrapTable keyField='id' data={ invoicesData } columns={ columns } pagination={ paginationFactory(paginationOptions) } />
-                                    </div>
+                                     </div>
                                 </div>   
                             </div>
                 </div>     
             </div>        
-        );
-    }
-
-
-}
+            */
