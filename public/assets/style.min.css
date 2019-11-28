@@ -233,12 +233,16 @@ p.glyphicons.envelope i:before{top:-5px;}
 .finances_cashflow .amount{font-size:25pt;font-weight:bold;text-shadow:0 3px 0 #ECECEC;text-align:center;padding:0;vertical-align:middle;line-height:normal;}
 .finances_cashflow .target{position:absolute;width:100%;text-align:center;top:55%;left:0;}
 .finances_cashflow .glyphicons.btn-action.single{width:35px;height:35px;margin-right:0;}.finances_cashflow .glyphicons.btn-action.single i:before{width:35px;height:35px;font-size:24px;left:0px;}
+
+/*
 .pagination ul{background:#fff;box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;-webkit-border-radius:6px 6px 6px 6px;-moz-border-radius:6px 6px 6px 6px;border-radius:6px 6px 6px 6px;}
 .pagination ul>li>a:hover{border-color:#37a6cd;background:#37a6cd;color:#fff;text-shadow:0 1px 0 rgba(0, 0, 0, 0.5);}
 .pagination ul>.active>a,.pagination ul>.active>span{border-color:#37a6cd;background:#37a6cd;color:#fff;text-shadow:0 1px 0 rgba(0, 0, 0, 0.5);box-shadow:inset 1px 1px 1px rgba(255, 255, 255, 0.2),inset -1px -1px 1px rgba(0, 0, 0, 0.2);-moz-box-shadow:inset 1px 1px 1px rgba(255, 255, 255, 0.2),inset -1px -1px 1px rgba(0, 0, 0, 0.2);-webkit-box-shadow:inset 1px 1px 1px rgba(255, 255, 255, 0.2),inset -1px -1px 1px rgba(0, 0, 0, 0.2);}
 .pagination ul>li>a,.pagination ul>li>span{border-color:#dddddd;}
 .pagination ul>.disabled>a,.pagination ul>.disabled>span{border-color:#dddddd;background:#fafafa;color:#dddddd;}
 .pagination ul>.disabled>a:hover{border-color:#dddddd;background:#fafafa;color:#dddddd;text-shadow:none;box-shadow:inset 1px 1px 1px rgba(255, 255, 255, 0),inset -1px -1px 1px rgba(0, 0, 0, 0);-moz-box-shadow:inset 1px 1px 1px rgba(255, 255, 255, 0),inset -1px -1px 1px rgba(0, 0, 0, 0);-webkit-box-shadow:inset 1px 1px 1px rgba(255, 255, 255, 0),inset -1px -1px 1px rgba(0, 0, 0, 0);}
+*/
+
 .google-visualization-table-div-page{margin:10px 0 0 0 !important;}.google-visualization-table-div-page .a-d-e-h-g{padding:0;border:none;margin:0;}
 .google-visualization-table-div-page .a-d-e-f-g,.google-visualization-table-div-page .a-d-e-h-g{border-style:none;}
 .google-visualization-table-div-page .a-d-e-o-q .a-d-e-h-g{border:none;}
