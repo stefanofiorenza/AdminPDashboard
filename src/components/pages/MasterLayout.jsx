@@ -23,7 +23,7 @@ export default class MasterLayout extends React.Component{
                     <SideMenu/>        
                     <div id="content">
                         {/* */}
-                        <DataTablePageAddOn />      
+                        <InvoicePage />      
                     </div>                    
                 </div>  
             </div>

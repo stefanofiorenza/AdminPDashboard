@@ -10,9 +10,8 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 
 import paginationFactory from 'react-bootstrap-table2-paginator';
-
-
 import {invoicesData} from '../data/InvoicesData.js';
+import './InvoicesPage.css';
 
 const customTotal = (from, to, size) => (
     <span className="react-bootstrap-table-pagination-total">
