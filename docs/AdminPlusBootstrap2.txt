@@ -1,0 +1,17 @@
+
+
+Componenti da muovere in React
+1) Page
+2) Panel
+Panel
+SearchPanel
+
+3) Widgets
+
+
+PROBLEMI:
+
+1) Integrare Data table nuovo:
+vecchia su TCI: 
+
+2) Integrare Select con autocomplete nuova:
