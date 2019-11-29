@@ -6,7 +6,7 @@ import DefaultPage from './DefaultPage.jsx';
 import DetailsPage from './DetailsPage.jsx';
 import DataTablePage from './DataTablePage.jsx';
 import DataTablePageAddOn from './DataTablePageAddOn.jsx';
-import InvoicePage from './InvoicesPage.jsx';
+import InvoicesPage from './InvoicesPage.jsx';
 
 export default class MasterLayout extends React.Component{
     
@@ -23,7 +23,7 @@ export default class MasterLayout extends React.Component{
                     <SideMenu/>        
                     <div id="content">
                         {/* */}
-                        <InvoicePage />      
+                        <InvoicesPage />      
                     </div>                    
                 </div>  
             </div>
