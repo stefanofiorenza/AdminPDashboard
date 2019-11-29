@@ -4,6 +4,37 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,600,700);
 
 
+.container {
+  width:1600px;
+}
+
+.container-inner {
+  padding: 5px 10px;
+}
+
+.navbar.main {
+  width:1600px;
+}
+
+body {
+  font-family: 'Open Sans',sans-serif;
+  background: #272729;
+  background: #f5fbff;
+  background: #f9f9f9;
+  background: #ECECEC;
+  background: #ffffff url(../images/pattern1.png) repeat;
+  font-size: 10pt;
+  padding-bottom: 35px;
+}
+
+#wrapper {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+
+
 /* ***glyphicons */
 .glyphicons.standard {
   width: 24px;
@@ -306,6 +337,7 @@ li.center,
 .container-fluid.documentation {
   background: #fff;
 }
+
 .navbar.main {
   height: 42px;
   background-color: #272729;

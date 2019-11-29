@@ -1,4 +1,5 @@
 import React from 'react';
+import './TopMenu.css';
 
 export default class TopMenu extends React.Component{
     
@@ -19,15 +20,6 @@ export default class TopMenu extends React.Component{
                     <a data-toggle="dropdown" href="form_demo.html?lang=en" className="glyphicons logout lock">
                         <span className="hidden-phone text">{this.props.userName}</span><i></i>
                     </a>
-                    
-                    <ul className="pull-right">
-                        <li><a href="form_demo.html?lang=en" className="glyphicons cogwheel">Settings<i></i></a></li>
-                        <li>
-                            <span>
-                                <a className="btn btn-default btn-small pull-right" style={ {paddingTop: 2, paddingLeft: 10, backgroundColor: "#fff"}} href="login.html?lang=en">Sign Out</a>
-                            </span>
-                        </li>
-                    </ul>
                 </li>
             </ul>
         </div>

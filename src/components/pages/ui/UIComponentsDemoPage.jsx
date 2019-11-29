@@ -1,5 +1,4 @@
 import React from 'react';
-import './WidgetPanelPage.css';
 import './UIComponentsDemoPage.css';
 
 export default class UIComponentsDemoPage extends React.Component{
@@ -239,7 +238,7 @@ export default class UIComponentsDemoPage extends React.Component{
                     </div>
 
                     <div className="widget-body" > 
-
+                        
                     </div>
                 </div>
              

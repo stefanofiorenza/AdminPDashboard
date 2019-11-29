@@ -12,9 +12,11 @@ import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import 'react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css';
 
-import {invoicesData} from '../data/InvoicesData.js';
+import {invoicesData} from '../../data/InvoicesData.js';
 import './InvoicesPage.css'; 
 
+import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
+import 'react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit.min.css';
 
 const customTotal = (from, to, size) => (
     <span className="react-bootstrap-table-pagination-total">
@@ -74,12 +76,54 @@ const paginationOptions = {
     }] // A numeric array is also available. the purpose of above example is custom the text
   };
 
-
+  const selectRow = {
+    mode: 'checkbox',
+    clickToSelect: true,
+    selected: [1, 3]
+  };
 
 export default class InvoicesPage extends React.Component{
     
     constructor(props) {
         super(props);
+        this.state = { selected: [0, 1] };
+    }
+
+    handleBtnClick = () => {
+      if (!this.state.selected.includes(2)) {
+        this.setState(() => ({
+          selected: [...this.state.selected, 2]
+        }));
+      } else {
+        this.setState(() => ({
+          selected: this.state.selected.filter(x => x !== 2)
+        }));
+      }
+    }
+  
+    handleOnSelect = (row, isSelect) => {
+      if (isSelect) {
+        this.setState(() => ({
+          selected: [...this.state.selected, row.id]
+        }));
+      } else {
+        this.setState(() => ({
+          selected: this.state.selected.filter(x => x !== row.id)
+        }));
+      }
+    }
+  
+    handleOnSelectAll = (isSelect, rows) => {
+      const ids = rows.map(r => r.id);
+      if (isSelect) {
+        this.setState(() => ({
+          selected: ids
+        }));
+      } else {
+        this.setState(() => ({
+          selected: []
+        }));
+      }
     }
 
     render() {
@@ -104,7 +148,26 @@ export default class InvoicesPage extends React.Component{
                                         table goes here
                                         <br/>
                                         <br/>
-                                        <BootstrapTable keyField='id' data={ invoicesData } columns={ columns } pagination={ paginationFactory(paginationOptions) } />
+                                        {/*}
+                                        <BootstrapTable keyField='id' data={ invoicesData } columns={ columns } 
+                                        pagination={ paginationFactory(paginationOptions) }   selectRow={ selectRow } />
+                                           */}
+
+                                        <ToolkitProvider
+                                                keyField="id"
+                                                data={ invoicesData }
+                                                columns={ columns }
+                                                pagination={ paginationFactory(paginationOptions) }   
+                                                selectRow={ selectRow } 
+                                                search
+                                                striped
+                                                hover
+                                                condensed
+                                                >
+                                                {
+                                                    props => <BootstrapTable { ...props.baseProps } />
+                                                }
+                                              </ToolkitProvider>
                                     </div>
                                 </div>   
                             </div>

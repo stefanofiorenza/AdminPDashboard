@@ -1,0 +1,5 @@
+/** find relevant element class and override some props to fit to your page requirements  (try within/without)*/ 
+.react-bootstrap-table-pagination{
+  margin-top: 20px;
+  margin-bottom: 140px;
+}

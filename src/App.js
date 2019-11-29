@@ -7,7 +7,7 @@ import SingleComponentLayout from './components/pages/SingleComponentLayout.jsx'
 function App() {
   return (
     <div>
-      <SingleComponentLayout />
+      <MasterLayout />
     </div>
   );
 }

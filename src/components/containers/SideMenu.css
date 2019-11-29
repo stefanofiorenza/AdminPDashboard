@@ -1,0 +1,192 @@
+  #menu {
+    width: 233px;
+    border-right: 1px solid #dddddd;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+  }
+  #menu #menuInner {
+    position: relative;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+    width: 225px;
+    border-right: 1px solid #d0d0d0;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1) inset;
+    -wekbit-box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1) inset;
+    float: left;
+  }
+  #menu #menuInner > ul {
+    float: left;
+    margin: 0 0 25px;
+    border-top: 1px solid #dddddd;
+  }
+  #menu #menuInner > ul > li:first-child {
+    border-top: 1px solid #fafafa;
+  }
+  #menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+  #menu ul li {
+    display: block;
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 1px solid #fafafa;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  #menu ul li a {
+    display: block;
+    width: auto;
+    border-bottom: 1px solid #dddddd;
+    padding: 0;
+    margin: 0;
+    color: #222222;
+    height: 38px;
+    line-height: 38px;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  #menu ul li a.glyphicons {
+    padding: 0 0 0 50px;
+  }
+  #menu ul li a.glyphicons i:before {
+    font-size: 17px;
+    color: #37a6cd;
+    top: 10px;
+    left: 20px;
+  }
+  #menu ul li a:hover {
+    background: #efefef;
+  }
+  #menu ul li:after {
+    overflow: hidden;
+    display: inline-block;
+    width: 0;
+    position: absolute;
+    content: "";
+  }
+  #menu ul li.active {
+    position: relative;
+    overflow: visible;
+  }
+  #menu ul li.active > a {
+    background: #fff;
+  }
+  #menu ul li.active:after {
+    display: inline-block;
+    width: 9px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -10px;
+    content: "";
+    background: #37a6cd;
+  }
+  #menu ul li.glyphicons a {
+    padding: 0 0 0 50px;
+  }
+  #menu ul li.glyphicons a i:before {
+    font-size: 17px;
+    color: #37a6cd;
+    top: 10px;
+    left: 20px;
+  }
+  #menu ul li.hasSubmenu.active {
+    height: auto;
+    background: #fff;
+    padding: 0 0 8px;
+    border-bottom: 1px solid #dddddd;
+  }
+  #menu ul li.hasSubmenu.active a {
+    border: none;
+  }
+  #menu ul li.heading span {
+    display: block;
+    text-transform: uppercase;
+    background: #ECECEC;
+    border-bottom: 1px solid #dddddd;
+    height: 38px;
+    color: #AFAFAF;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0 0 20px;
+    font-size: 11pt;
+  }
+  #menu ul ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #menu ul ul li {
+    height: auto;
+    border: none;
+  }
+  #menu ul ul li a {
+    padding: 0 0 0 20px;
+    height: 25px;
+    line-height: 25px;
+    border: none;
+    font-weight: 400;
+  }
+  #menu ul ul li a.glyphicons i:before {
+    font-size: 12px;
+    top: 7px;
+    left: 22px;
+    color: #222;
+  }
+  #menu ul ul li a:hover {
+    background: #fafafa;
+  }
+  #menu ul ul li.active a {
+    font-weight: 600;
+    background: #fafafa;
+  }
+  #menu #search {
+    position: relative;
+    overflow: hidden;
+    width: 196px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    background: #fff;
+    margin: 15px auto;
+  }
+  #menu #search input {
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    width: 152px;
+    margin: 0;
+    left: 10px;
+    position: absolute;
+    top: 0;
+    box-shadow: none;
+  }
+  #menu #search .glyphicons {
+    width: 34px;
+    height: 30px;
+    background: #fff;
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  #menu #search .glyphicons i:before {
+    top: 6px;
+    left: 9px;
+    color: #cccccc;
+    font-size: 17px;
+  }
