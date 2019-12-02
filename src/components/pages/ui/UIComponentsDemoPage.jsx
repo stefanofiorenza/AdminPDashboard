@@ -5,7 +5,7 @@ export default class UIComponentsDemoPage extends React.Component{
      
     render() {
         return (
-          <div className="container">
+          <div> {/* className="container"> (needed in standalone)*/}
               <h2>Form UI Demo:</h2>
               
               <hr className="separator bottom" />

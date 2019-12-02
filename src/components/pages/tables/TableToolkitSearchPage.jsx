@@ -36,7 +36,7 @@ const columns = [{
 }];
 
 
-export default class TableToolkitPage extends React.Component{
+export default class TableToolkitSearchPage extends React.Component{
     
     constructor(props) {
         super(props);

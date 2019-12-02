@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default class PanelPage extends React.Component{
+export default class BootstrapPanelPage extends React.Component{
      
     render() {
         return (
-            <div className="container">
+            <div> {/*className="container">*/}
             <h2>Panels with Contextual Classes</h2>
             <div className="panel-group">
               <div className="panel panel-default">

@@ -5,7 +5,7 @@ export default class WidgetPanelPage extends React.Component{
      
     render() {
         return (
-          <div>
+          <div> {/*className="container">*/}
             <h2>Panels Widget Demo:</h2>
             
             <hr className="separator bottom" />
