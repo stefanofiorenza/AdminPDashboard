@@ -1,8 +1,11 @@
 import React from 'react';
-import './SideMenu.css';
 
 export default class SideMenu extends React.Component{
- 
+    
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
            <div id="menu" className="hidden-phone">

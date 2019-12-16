@@ -1,0 +1,22 @@
+
+
+Componenti da muovere in React
+1) Page
+2) Panel
+Panel
+SearchPanel
+
+3) Widgets
+
+
+
+https://www.gitmemory.com/issue/react-bootstrap-table/react-bootstrap-table2/839/470158513
+https://appdividend.com/2018/05/04/react-bootstrap-table2-example/
+https://codesandbox.io/s/jlol04qrxv
+
+PROBLEMI:
+
+1) Integrare Data table nuovo:
+vecchia su TCI: 
+
+2) Integrare Select con autocomplete nuova:

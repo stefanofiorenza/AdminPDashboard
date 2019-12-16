@@ -1,0 +1,402 @@
+
+/*
+.navbar {
+    *position: relative;
+    *z-index: 2;
+    margin-bottom: 20px;
+    overflow: visible;
+}*/
+
+
+.navbar.main {    
+    height: 42px;
+    background-color: #272729;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    position: relative;
+  }
+  .navbar.main .appbrand {
+    font-family: 'Raleway', sans-serif;
+    color: #dedede;
+    font-size: 18pt;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    text-decoration: none;
+    height: 42px;
+    padding: 0 0 0 10px;
+    line-height: normal;
+    width: 216px;
+    border-right: 1px solid #424243;
+  }
+  .navbar.main .appbrand > span {
+    border-right: 1px solid #000000;
+    display: block;
+    height: 42px;
+  }
+  .navbar.main .appbrand > span span {
+    display: block;
+    font-size: 8pt;
+    color: #686869;
+    line-height: normal;
+    margin: -4px 0 0;
+  }
+  .navbar.main .btn-navbar {
+    padding: 6px;
+    margin: 0;
+    position: absolute;
+    float: none;
+    left: 235px;
+    top: 7px;
+    display: block;
+    background: #424243;
+    -webkit-border-radius: 0 0 0 0;
+    -moz-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
+  }
+  .navbar.main .btn-navbar .icon-bar {
+    background: #999;
+  }
+  .navbar.main .topnav {
+    border-left: 1px solid #000000;
+  }
+  .navbar.main .topnav,
+  .navbar.main .topnav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navbar.main .topnav > li {
+    border-left: 1px solid #424243;
+    border-right: 1px solid #000000;
+    position: relative;
+  }
+  .navbar.main .topnav > li,
+  .navbar.main .topnav > li .notif li {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    display: block;
+    padding: 0 1px;
+  }
+  .navbar.main .topnav > li > a,
+  .navbar.main .topnav > li .notif li > a {
+    display: block;
+    color: #d9d9d9;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+  .navbar.main .topnav > li > a .text,
+  .navbar.main .topnav > li .notif li > a .text {
+    display: inline-block;
+    padding-left: 10px;
+  }
+  .navbar.main .topnav > li > a.glyphicons,
+  .navbar.main .topnav > li .notif li > a.glyphicons {
+    padding: 0 10px 0 35px;
+  }
+  .navbar.main .topnav > li > a.glyphicons i:before,
+  .navbar.main .topnav > li .notif li > a.glyphicons i:before {
+    color: #7d7d7f;
+    font-size: 17px;
+    top: 12px;
+    left: 10px;
+  }
+  .navbar.main .topnav > li > a.glyphicons.logout,
+  .navbar.main .topnav > li .notif li > a.glyphicons.logout {
+    padding: 0 38px 0 0;
+  }
+  .navbar.main .topnav > li > a.glyphicons.logout i:before,
+  .navbar.main .topnav > li .notif li > a.glyphicons.logout i:before {
+    left: auto;
+    right: 10px;
+    color: #37a6cd;
+  }
+  .navbar.main .topnav > li.open,
+  .navbar.main .topnav > li .notif li.open {
+    padding: 0;
+  }
+  .navbar.main .topnav > li.open > a,
+  .navbar.main .topnav > li .notif li.open > a {
+    background: #f5f5f5;
+    height: 36px;
+    color: #a9a9a9;
+    position: relative;
+    top: 6px;
+    line-height: 34px;
+    border: 1px solid #dddddd;
+  }
+  .navbar.main .topnav > li.open > a i:before,
+  .navbar.main .topnav > li .notif li.open > a i:before {
+    top: 9px;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu {
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    border-top: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    right: 1px;
+    width: 246px;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu li,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li {
+    border-bottom: 1px solid #dddddd;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu li:last-child,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu li:first-child > a,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li:first-child > a,
+  .navbar.main .topnav > li.open .dropdown-menu li:first-child > a:hover,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li:first-child > a:hover,
+  .navbar.main .topnav > li.open .dropdown-menu li:first-child > span,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li:first-child > span {
+    border-top: none;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu li > a,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li > a,
+  .navbar.main .topnav > li.open .dropdown-menu li > a:hover,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li > a:hover,
+  .navbar.main .topnav > li.open .dropdown-menu li > span,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li > span {
+    height: 38px;
+    line-height: 38px;
+    padding: 0 10px;
+    border-top: 1px solid #ffffff;
+    display: block;
+    background: #f5f5f5;
+    color: #333;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu li > a.glyphicons i:before,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li > a.glyphicons i:before,
+  .navbar.main .topnav > li.open .dropdown-menu li > a:hover.glyphicons i:before,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li > a:hover.glyphicons i:before,
+  .navbar.main .topnav > li.open .dropdown-menu li > span.glyphicons i:before,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li > span.glyphicons i:before {
+    left: auto;
+    right: 10px;
+    top: 8px;
+    font-size: 17px;
+    color: #c4c4c4;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu li.active,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.active {
+    background: #ddd;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu li.active a,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.active a {
+    background: #ddd;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight > a,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight > a,
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight > a:hover,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight > a:hover,
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight > span,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight > span {
+    background: #fff;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > a,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > a,
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > a:hover,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > a:hover,
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > span,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > span {
+    height: auto;
+    line-height: normal;
+    padding: 5px 10px 10px;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > a .heading,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > a .heading,
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > a:hover .heading,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > a:hover .heading,
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > span .heading,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > span .heading {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > a .heading a,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > a .heading a,
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > a:hover .heading a,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > a:hover .heading a,
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > span .heading a,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > span .heading a {
+    text-transform: none;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > a .img,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > a .img,
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > a:hover .img,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > a:hover .img,
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > span .img,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > span .img {
+    display: inline-block;
+    float: left;
+    width: 47px;
+    height: 45px;
+    line-height: 45px;
+    background: #272729;
+    text-align: center;
+    content: "\e004";
+    color: #525254;
+    font-family: "Glyphicons";
+    margin: 0 10px 0 0;
+    position: relative;
+  }
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > a .clearfix,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > a .clearfix,
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > a:hover .clearfix,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > a:hover .clearfix,
+  .navbar.main .topnav > li.open .dropdown-menu li.highlight.profile > span .clearfix,
+  .navbar.main .topnav > li .notif li.open .dropdown-menu li.highlight.profile > span .clearfix {
+    display: block;
+  }
+  .navbar.main .topnav .dropdown > a .caret {
+    border-top-color: #fafafa;
+    top: 12px;
+    position: relative;
+  }
+  .navbar.main .topnav .dropdown-menu {
+    -webkit-border-radius: 0 0 0 0;
+    -moz-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
+  }
+  .navbar.main .topnav #themer {
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: -1px;
+    z-index: 1000;
+    width: 250px;
+    margin: -5px 0 0;
+    text-align: left;
+  }
+  .navbar.main .topnav #themer.in {
+    overflow: visible;
+  }
+  .navbar.main .topnav #themer .close2 {
+    position: absolute;
+    background: #DDD;
+    color: #222;
+    font-weight: 600;
+    height: 20px;
+    top: 14px;
+    right: 10px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 10pt;
+    padding: 0 10px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+  }
+  .navbar.main .topnav #themer .wrapper {
+    -webkit-border-radius: 5px 0 5px 5px;
+    -moz-border-radius: 5px 0 5px 5px;
+    border-radius: 5px 0 5px 5px;
+    position: relative;
+    background: #292c2e;
+    border: 1px solid #2f3235;
+    box-shadow: 0 0 0 1px #5e646b inset;
+    -moz-box-shadow: 0 0 0 1px #5e646b inset;
+    -webkit-box-shadow: 0 0 0 1px #5e646b inset;
+    padding: 15px;
+    color: #fafafa;
+  }
+  .navbar.main .topnav #themer .wrapper hr.separator {
+    margin: 10px 0;
+    border-top-color: #5e646b;
+    border-bottom-color: #2f3235;
+  }
+  .navbar.main .topnav #themer .wrapper h4 {
+    border-bottom: 1px solid #5e6060;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+    color: #fff;
+  }
+  .navbar.main .topnav #themer .wrapper h4 span {
+    color: #5e6060;
+    font-weight: normal;
+    font-size: 10pt;
+  }
+  .navbar.main .topnav #themer .wrapper .btn {
+    margin: 0;
+  }
+  .navbar.main .topnav #themer .wrapper #themer-getcode-less {
+    margin: 0 0 0 5px;
+  }
+  .navbar.main .topnav #themer .wrapper ul {
+    margin: 0;
+    list-style: none;
+  }
+  .navbar.main .topnav #themer .wrapper ul li {
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+  }
+  .navbar.main .topnav #themer .wrapper ul li .minicolors {
+    line-height: normal;
+    border: none;
+    top: 2px;
+    right: 0;
+    position: absolute;
+  }
+  .navbar.main .topnav #themer .wrapper ul li .minicolors input {
+    border: none;
+    height: 20px;
+    width: 69px;
+    background: #414649;
+    color: #fff;
+    font-size: 9pt;
+    padding: 0 5px;
+    margin: 0 0 1px;
+  }
+  .navbar.main .topnav #themer .wrapper ul li .minicolors-swatch {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+  }
+  .navbar.main .topnav #themer .wrapper ul li .minicolors-panel {
+    z-index: 10000;
+    top: 24px;
+  }
+  .navbar.main .topnav #themer .wrapper ul li .minicolors-position-left .minicolors-panel {
+    left: -152px;
+  }
+  .navbar.main .topnav #themer .wrapper ul li select {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 100px;
+    height: 20px;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    font-size: 9pt;
+    background: #414649;
+    border: 1px solid #2F3235;
+    color: #fff;
+  }
+  .navbar.main .topnav #themer .wrapper ul li .link {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .navbar.main .topnav #themer .wrapper ul li label {
+    margin: 0;
+    line-height: 25px;
+    font-size: 9pt;
+  }
+  .navbar.main .topnav #themer .wrapper ul li label input {
+    margin: 0 0 1px;
+  }
+  .navbar.main .topnav #themer .wrapper ul li.advanced {
+    display: none;
+  }
+  .navbar.main .topnav #themer.themer-advanced .wrapper ul li.advanced {
+    display: block;
+  }
