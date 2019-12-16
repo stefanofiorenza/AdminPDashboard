@@ -72,7 +72,7 @@ export default class BasicTablePage extends React.Component{
 
     render() {
         return (        
-            <div className="container">
+            <div> {/* className="container"> (needed in standalone)*/}
             <h2>Table Demo:</h2>
 
                 <BootstrapTable 

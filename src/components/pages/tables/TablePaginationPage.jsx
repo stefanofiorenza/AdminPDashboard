@@ -75,7 +75,7 @@ export default class TablePaginationPage extends React.Component{
 
     render() {
         return (        
-            <div className="container">
+            <div> {/* className="container"> (needed in standalone)*/}
             <h2>Table Pagination Demo:</h2>
                 <BootstrapTable keyField='id' data={ productsData } columns={ columns } 
                 pagination={ paginationFactory(paginationOptions) }  />                             

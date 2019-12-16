@@ -6,15 +6,17 @@
 
 .container {
   width:1300px;
+  padding: 5px 10px;
 }
 
 .container-inner {
   padding: 5px 10px;
 }
 
+/*
 .navbar.main {
   width:1600px;
-}
+}*/
 
 body {
   font-family: 'Open Sans',sans-serif;
