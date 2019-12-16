@@ -41,7 +41,7 @@ export default class MasterLayout extends React.Component{
                     <div id="content">
                         {/* */}
                         <div className="container-inner">
-                            <TableToolkitPaginationPage />    
+                            <DetailsPage />    
                         </div>    
                     </div>                    
                 </div>  

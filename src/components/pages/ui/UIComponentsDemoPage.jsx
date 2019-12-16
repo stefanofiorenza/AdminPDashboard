@@ -31,6 +31,11 @@ export default class UIComponentsDemoPage extends React.Component{
                   <div className="widget-body">                 
                     <form action="#">     
               
+                      <div class="form-group">
+                            <label for="email">Ordinary Text:</label>
+                            <input type="text" className="form-control" id="ordinaryText" />
+                        </div>
+
                         <div class="form-group">
                             <label for="email">Email address:</label>
                             <input type="email" className="form-control" id="email" />
