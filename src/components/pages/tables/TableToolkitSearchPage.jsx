@@ -44,7 +44,7 @@ export default class TableToolkitSearchPage extends React.Component{
 
     render() {
         return (        
-            <div className="container">
+            <div> {/* className="container"> (needed in standalone)*/}
             <h2>Table Toolkit (Search) Demo:</h2>
 
                 <ToolkitProvider

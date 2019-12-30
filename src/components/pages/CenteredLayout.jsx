@@ -23,7 +23,7 @@ import TopMenu from '../containers/TopMenu.jsx'
 import SideMenu from '../containers/SideMenu.jsx';
 import DefaultPage from './DefaultPage.jsx';
 
-export default class SingleComponentLayout extends React.Component{
+export default class CenteredLayout extends React.Component{
     
 
     render() {
