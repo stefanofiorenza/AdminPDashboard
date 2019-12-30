@@ -15,6 +15,10 @@ import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
 import 'react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit.min.css';
 
+
+import './TableToolkitPaginationPage.css';
+
+
 import paginationFactory, { PaginationProvider, PaginationListStandalone } from 'react-bootstrap-table2-paginator';
 
 import {productsData} from '../../data/ProductsData.js';
@@ -38,6 +42,12 @@ const columns = [{
   text: ''
 }];
 
+
+const customTotal = (from, to, size) => (
+  <span className="react-bootstrap-table-pagination-total">
+    Showing { from } to { to } of { size } Results
+  </span>
+);
 
 export default class TableToolkitPaginationPage extends React.Component{
     

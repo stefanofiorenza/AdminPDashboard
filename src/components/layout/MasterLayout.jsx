@@ -22,7 +22,7 @@ import TableToolkitPaginationPage from '../pages/tables/TableToolkitPaginationPa
 /* Menu Components*/
 import TopMenu from './TopMenu.jsx'
 import SideMenu from './SideMenu.jsx';
-import DefaultPage from './DefaultPage.jsx';
+import ContentPage from './ContentPage.jsx';
 
 import './MasterLayout.css';
 
@@ -42,7 +42,7 @@ export default class MasterLayout extends React.Component{
                     <div id="content">
                         {/* */}
                         <div className="container-inner">
-                            <TableToolkitPaginationPage />    
+                            <ContentPage />    
                         </div>    
                     </div>                    
                 </div>  

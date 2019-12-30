@@ -1,9 +1,20 @@
 import React from 'react';
+import { Link} from 'react-router-dom';
 import './SideMenu.css';
 
 export default class SideMenu extends React.Component{
  
     render() {
+
+        
+        const menuItemStyle = {
+			height: 25,
+			paddingTop:10,
+			paddingRight:0,
+			paddingBottom:5,
+			paddingLeft: 5
+        };
+
         return (
            <div id="menu" className="hidden-phone">
                 <div id="menuInner">
@@ -18,17 +29,58 @@ export default class SideMenu extends React.Component{
                     </ul>
 
                     <ul>
-                        <li className="heading"><span>Users</span></li>
-                        <li className="glyphicons user_add"><a href="finances.html?lang=en"><i></i><span>Create User</span></a></li>
-                        <li className="glyphicons group"><a href="finances.html?lang=en"><i></i><span>Admin Users</span></a></li>		
+                        <li className="heading"><span>Tables</span></li>
+                        <li className="glyphicons table" >
+                            <Link to="/table-basic" >							
+                                <i></i><span>Basic</span>
+                            </Link>
+						</li>
+                        <li className="glyphicons table" >
+                            <Link to="/table-search" >							
+                                <i></i><span>Search</span>
+                            </Link>
+						</li>
+                        <li className="glyphicons table" >
+                            <Link to="/table-pagination" >							
+                                <i></i><span>Pagination</span>
+                            </Link>
+						</li>
+                        <li className="glyphicons table" >
+                            <Link to="/table-all" >							
+                                <i></i><span>All</span>
+                            </Link>
+						</li>                     	
                     </ul>	
 
                     <ul>
-                        <li className="heading"><span>Admin</span></li>					
-                        <li className="glyphicons gift"><a href="finances.html?lang=en"><i></i><span>Create Product</span></a></li>	
-                        <li className="glyphicons table"><a href="finances.html?lang=en"><i></i><span>Admin Products</span></a></li>									
+                        <li className="heading"><span>UI</span></li>	
+                        <li className="glyphicons user_add" >
+                            <Link to="/ui-form" >							
+                                <i></i><span>Form</span>
+                            </Link>
+						</li>
+                        <li className="glyphicons user_add" >
+                            <Link to="/ui-components" >							
+                                <i></i><span>UI Components</span>
+                            </Link>
+						</li>
                     </ul>
-                    
+
+
+                    <ul>
+                        <li className="heading"><span>Demo Pages</span></li>	
+                        <li className="glyphicons gift" >
+                            <Link to="/details" >							
+                                <i></i><span>Add Product</span>
+                            </Link>
+						</li>
+                        <li className="glyphicons user_add" >
+                            <Link to="/invoices" >							
+                                <i></i><span>Invoices</span>
+                            </Link>
+						</li>                       								
+                    </ul>
+
                 </div>
         </div>
         );
