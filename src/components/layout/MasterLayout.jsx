@@ -1,26 +1,27 @@
 import React from 'react';
 
+
 // App Use Case Demos
-import InvoicesPage from './demo/InvoicesPage.jsx';
-import DetailsPage from './demo/DetailsPage.jsx';
+import InvoicesPage from '../pages/demo/InvoicesPage.jsx';
+import DetailsPage from '../pages/demo/DetailsPage.jsx';
 
 /* UI Demo Pages */
-import FormPage from './ui/FormPage.jsx';
-import UIComponentsDemoPage from './ui/UIComponentsDemoPage.jsx';
+import FormPage from '../pages/ui/FormPage.jsx';
+import UIComponentsDemoPage from '../pages/ui/UIComponentsDemoPage.jsx';
 
 /* Panels Demo Pages */
-import BootstrapPanelPage from './layout/BootstrapPanelPage.jsx';
-import WidgetPanelPage from './layout/WidgetPanelPage.jsx';
+import BootstrapPanelPage from '../pages/panels/BootstrapPanelPage.jsx';
+import WidgetPanelPage from '../pages/panels/WidgetPanelPage.jsx';
 
 /* Tables Demo Pages */
-import TableBasicPage from './tables/TableBasicPage.jsx';
-import TablePaginationPage from './tables/TablePaginationPage.jsx';
-import TableToolkitSearchPage from './tables/TableToolkitSearchPage.jsx';
-import TableToolkitPaginationPage from './tables/TableToolkitPaginationPage.jsx';
+import TableBasicPage from '../pages/tables/TableBasicPage.jsx';
+import TablePaginationPage from '../pages/tables/TablePaginationPage.jsx';
+import TableToolkitSearchPage from '../pages/tables/TableToolkitSearchPage.jsx';
+import TableToolkitPaginationPage from '../pages/tables/TableToolkitPaginationPage.jsx';
 
 /* Menu Components*/
-import TopMenu from '../containers/TopMenu.jsx'
-import SideMenu from '../containers/SideMenu.jsx';
+import TopMenu from './TopMenu.jsx'
+import SideMenu from './SideMenu.jsx';
 import DefaultPage from './DefaultPage.jsx';
 
 import './MasterLayout.css';
