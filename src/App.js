@@ -7,7 +7,7 @@ import CenteredLayout from './components/pages/CenteredLayout.jsx';
 function App() {
   return (
     <div>
-      <CenteredLayout />
+      <MasterLayout />
     </div>
   );
 }
